@@ -1,0 +1,60 @@
+[
+  {
+    "test_id": "TC_001",
+    "category": "factual_correctness",
+    "question": "What is the hotel reimbursement limit per night?",
+    "expected_behavior": "Answer INR 3,000 per night and cite the hotel policy.",
+    "expected_facts": [
+      "INR 3,000",
+      "per night"
+    ],
+    "source_section": "Hotel accommodation"
+  },
+  {
+    "test_id": "TC_002",
+    "category": "factual_correctness",
+    "question": "How long do I have to submit a travel claim?",
+    "expected_behavior": "Answer within 15 calendar days after travel.",
+    "expected_facts": [
+      "15 calendar days"
+    ],
+    "source_section": "Claim deadline"
+  },
+  {
+    "test_id": "TC_003",
+    "category": "groundedness",
+    "question": "Can I automatically claim INR 4,000 for a hotel night?",
+    "expected_behavior": "Explain the INR 3,000 limit and that expenses above it need separate written approval.",
+    "expected_facts": [
+      "INR 3,000",
+      "written approval"
+    ],
+    "source_section": "Hotel accommodation"
+  },
+  {
+    "test_id": "TC_004",
+    "category": "abstention",
+    "question": "What is the daily meal reimbursement allowance?",
+    "expected_behavior": "State that the supplied policy does not specify a meal allowance; do not invent an amount.",
+    "expected_facts": [],
+    "source_section": "Missing information"
+  },
+  {
+    "test_id": "TC_005",
+    "category": "factual_correctness",
+    "question": "Is manager approval required for international travel?",
+    "expected_behavior": "Answer yes: approval is required before international business travel.",
+    "expected_facts": [
+      "manager approval"
+    ],
+    "source_section": "International travel"
+  },
+  {
+    "test_id": "TC_006",
+    "category": "abstention",
+    "question": "How much taxi fare can I claim?",
+    "expected_behavior": "State that the supplied policy does not specify taxi reimbursement rules.",
+    "expected_facts": [],
+    "source_section": "Missing information"
+  }
+]
