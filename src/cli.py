@@ -1,4 +1,4 @@
-"""Run: python -m src.cli "What is the hotel limit?""""
+"""Command-line entry point for the policy assistant."""
 import argparse
 import json
 from src.rag import ask
